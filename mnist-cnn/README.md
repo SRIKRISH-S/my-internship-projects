@@ -1,19 +1,60 @@
-MNIST CNN
----------
-A small CNN trained on MNIST digits using TensorFlow.
+# MNIST Handwritten Digit Recognition (CNN Model)
 
-How to run:
-1. Open terminal in VS Code (Terminal → New Terminal).
-2. Create & activate virtual environment:
-   - Windows:
-     python -m venv venv
-     venv\Scripts\activate
-   - mac/linux:
-     python3 -m venv venv
-     source venv/bin/activate
-3. Install:
-   pip install -r requirements.txt
-4. Run:
-   python train_mnist.py
+This project uses a Convolutional Neural Network (CNN) to classify handwritten digits (0–9) from the MNIST dataset.
 
-Model saved to saved_model/mnist_cnn and training_loss.png created.
+---
+
+## 📌 Overview
+The MNIST dataset contains 70,000 images of handwritten digits.  
+This model trains a CNN to achieve **~99% test accuracy**.
+
+---
+
+## 🚀 Features
+- Trained using TensorFlow/Keras  
+- Achieves ~99% accuracy  
+- Saved model in `.keras` format  
+- Demo script included to visually test predictions  
+- Training loss graph saved as `training_loss.png`
+
+---
+
+## 📂 Project Files
+```
+mnist-cnn/
+│── train_mnist.py          # Training script
+│── show_mnist_demo.py      # Demo script to show prediction on sample digit
+│── training_loss.png       # Loss graph
+│── saved_model/
+│     └── mnist_cnn.keras   # Saved trained model
+```
+
+---
+
+## ▶️ How to Run Training
+```
+python train_mnist.py
+```
+
+## ▶️ How to Run Prediction Demo
+```
+python show_mnist_demo.py
+```
+
+This will:
+- Load the saved model  
+- Pick a sample MNIST digit  
+- Display the image  
+- Show **Predicted vs Actual** output
+
+---
+
+## 📈 Example Outputs
+- Test Accuracy: ~0.989  
+- Training loss graph saved in `training_loss.png`
+
+---
+
+## 👤 Author
+**SRIKRISH S**  
+GitHub: https://github.com/SRIKRISH-S
